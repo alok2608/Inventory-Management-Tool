@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-section">
+        <div class="card">
+            <h2 style="font-size:2.2rem; margin-bottom: 24px; text-align:center;">Admin Login</h2>
+            <form id="login-form">
+                <label for="username" style="font-size:1.1rem; margin-bottom:4px;">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" required />
+                <label for="password" style="font-size:1.1rem; margin-bottom:4px;">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required />
+                <button type="submit">Login</button>
+            </form>
+            <div id="login-error" style="color:red;"></div>
+        </div>
+    </div>
+    <div id="app-container" style="display:none;">
+        <div id="sidebar">
+            <h2>Inventory Admin</h2>
+            <button id="logout-btn">Logout</button>
+        </div>
+        <div id="main-content">
+            <div id="dashboard">
+                <h2>Admin Dashboard</h2>
+                <div id="analytics"></div>
+                <div id="products"></div>
+                <div id="add-product"></div>
+            </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html> 

@@ -45,8 +45,8 @@ The API will be available at [http://localhost:8080](http://localhost:8080).
 ### 5. Run with Docker (Recommended)
 Build and run the backend in a container:
 ```sh
-docker build -t inventory-backend .
-docker run -p 8080:8080 inventory-backend
+docker build -t inventory-Management-tool .
+docker run -e PORT=8080 -p 8080:8080 inventory-management-Tool
 ```
 
 ---
